@@ -216,3 +216,21 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+.seccion {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+}
+
+.seccion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.seccion p {
+    margin-top: 10px;
+}
