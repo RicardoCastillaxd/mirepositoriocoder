@@ -62,6 +62,15 @@ main {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+  .barra {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .barra input, .barra button {
+    width: 100%;
+  }
+}
 main p {
   font-size: 1.2em;
 }
@@ -228,8 +237,7 @@ footer {
   height: auto;
   border-radius: 5px;
 }
-
-.seccion p {
+.seccion img p {
   margin-top: 10px;
 }
 
@@ -237,6 +245,63 @@ footer {
   height: 100vh;
   width: 100%;
   background-color: #ffffff;
+}
+
+.faq-box {
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 8px;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.question h4 {
+  color: #0400fc;
+  font-size: 18px;
+}
+
+.question p {
+  color: #666;
+  font-size: 16px;
+}
+
+form {
+  max-width: 400px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff0080;
+}
+
+iframe {
+  border: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

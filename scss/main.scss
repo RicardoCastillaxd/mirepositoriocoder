@@ -19,19 +19,19 @@ header {
 
 nav {
     margin-top: 10px;
-    
+
 }
 
 nav ul {
     list-style: none;
     text-align: right;
-    
+
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
-    
+
 }
 
 nav a {
@@ -66,7 +66,16 @@ main {
     border-radius: 0 5px 4px 4px;
     cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+    .barra {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
+    .barra input, .barra button {
+        width: 100%;
+    }
+}
 main p {
     font-size: 1.2em;
 }
@@ -104,6 +113,7 @@ p {
     margin-top: 10px;
     text-align: center;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -130,7 +140,7 @@ th, td {
 }
 
 .productoCa img {
-    width: 80px; 
+    width: 80px;
     margin-right: 10px;
 }
 
@@ -152,7 +162,7 @@ th, td {
 }
 
 .logoperfil img {
-    width: 200px; 
+    width: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -166,7 +176,7 @@ th, td {
 
 }
 .card img{
-    width: 100%;       
+    width: 100%;
 }
 .card h4{
     text-align: center;
@@ -215,6 +225,7 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+
 .seccion {
     text-align: center;
     padding: 20px;
@@ -222,7 +233,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 20px;
     background-color: #f8f9fa;
-    width: 300px; 
+    width: 300px;
 
 
 }
@@ -232,14 +243,75 @@ footer {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    
-}
 
-.seccion p {
-    margin-top: 10px;
+
+    p {
+        margin-top: 10px;
+    }
 }
 .nosotros {
-    height: 100vh; 
+    height: 100vh;
     width: 100%;
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
+
+.faq-box {
+    border: 1px solid #ddd;
+    padding: 5px; 
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px; 
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+
+.question {
+    margin-bottom: 10px;
+}
+
+.question h4 {
+    color: #0400fc;
+    font-size: 18px; 
+}
+
+.question p {
+    color: #666;
+    font-size: 16px; 
+}
+
+
+form {
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff0080;
+}
+
+iframe {
+    border: 0;
+}
+
+
